@@ -26,10 +26,6 @@ document.addEventListener("keypress", function(event) {
             }, 500);
             };;
         
-            
-
-
-
         function dos()
         {
             breedingtimer = setInterval(breeding, 3000);
