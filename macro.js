@@ -21,14 +21,14 @@ document.addEventListener("keypress", function(event) {
             setTimeout(() => {
             var owowo = (document.getElementsByClassName("ui-icon ui-icon-circle-triangle-e")[0]);
             owowo.click();
-            ;}, 500);
-            }, 500);
-            }, 500);
+            ;}, 700);
+            }, 700);
+            }, 700);
             };;
-        
+   
         function dos()
         {
-            breedingtimer = setInterval(breeding, 3000);
+            breedingtimer = setInterval(breeding, 3500);
         }
         function cosas()
         {
