@@ -19,21 +19,16 @@ if (contenedor == false) {
             we.click();
             
             setTimeout(() => {
-            var iwiwi = (document.getElementsByClassName("ui-button ui-corner-all ui-widget")[15]);
-            iwiwi.click();
+            document.getElementsByClassName("ui-dialog-buttonset")[0].getElementsByClassName("ui-button")[0].click();
           setTimeout(() => {
             history.back();
             setTimeout(() => {
             var owowo = (document.getElementsByClassName("ui-icon ui-icon-circle-triangle-e")[0]);
             owowo.click();
             
-            ;}, 700);
             }, 700);
             }, 700);
-
-
-            
-
+            }, 700);
             
             };
 
