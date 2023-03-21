@@ -45,7 +45,4 @@ if (contenedor == false) {
             if (contenedor == true){
             clearInterval(breedingtimer);
             $('body').css('background-color', '#ffffff');}
-                else {
-                    alert("No hay nada que detener :3");
-                }
         }
