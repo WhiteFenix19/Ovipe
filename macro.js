@@ -1,6 +1,6 @@
 window.delay = 700 // poner el delay que quieran
 
-window.delayinterval = delay * 3
+window.hackeando = delay * 3
 window.contenedor = false;
 document.addEventListener("keypress", function(event) {
     if (event.keyCode == 49){
@@ -39,7 +39,7 @@ if (contenedor == false) {
         function dos()
         {
             
-            breedingtimer = setInterval(breeding, window.delayinterval);
+            breedingtimer = setInterval(breeding, window.hackeando);
             $('body').css('background-color', '#125e20');
             
         }
