@@ -1,3 +1,6 @@
+window.delay = 700 // poner el delay que quieran
+
+window.delayinterval = delay * 3
 window.contenedor = false;
 document.addEventListener("keypress", function(event) {
     if (event.keyCode == 49){
@@ -26,9 +29,9 @@ if (contenedor == false) {
             var owowo = (document.getElementsByClassName("ui-icon ui-icon-circle-triangle-e")[0]);
             owowo.click();
             
-            }, 700);
-            }, 700);
-            }, 700);
+            }, window.delay);
+            }, window.delay);
+            }, window.delay);
             
             };
 
@@ -36,7 +39,7 @@ if (contenedor == false) {
         function dos()
         {
             
-            breedingtimer = setInterval(breeding, 3500);
+            breedingtimer = setInterval(breeding, window.delayinterval);
             $('body').css('background-color', '#125e20');
             
         }
