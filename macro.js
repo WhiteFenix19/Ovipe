@@ -1,4 +1,4 @@
-window.delay = 700 // poner el delay que quieran
+window.cagaste = 700 // poner el delay que quieran en milisegundos
 
 window.hackeando = delay * 3
 window.contenedor = false;
@@ -29,9 +29,9 @@ if (contenedor == false) {
             var owowo = (document.getElementsByClassName("ui-icon ui-icon-circle-triangle-e")[0]);
             owowo.click();
             
-            }, window.delay);
-            }, window.delay);
-            }, window.delay);
+            }, window.cagaste);
+            }, window.cagaste);
+            }, window.cagaste);
             
             };
 
