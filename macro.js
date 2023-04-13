@@ -1,6 +1,7 @@
 window.cagaste = 700 // poner el delay que quieran en milisegundos
 
-window.hackeando = (cagaste * 3) + 150
+window.hackeand = (cagaste * 3)
+window.hackeando = (hackeand + 150)
 window.contenedor = false;
 document.addEventListener("keypress", function(event) {
     if (event.keyCode == 49){
