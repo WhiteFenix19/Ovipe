@@ -1,6 +1,6 @@
 window.cagaste = 700 // poner el delay que quieran en milisegundos
 
-window.hackeando = (cagaste * 3);
+window.hackeando = cagaste * 3
 window.contenedor = false;
 document.addEventListener("keypress", function(event) {
     if (event.keyCode == 49){
@@ -20,13 +20,19 @@ if (contenedor == false) {
             var we = document.getElementsByClassName("pet")[awawawa];
             console.log(awawawa);
             we.click();
-            wait(window.cagaste);
+            
+            setTimeout(() => {
             document.getElementsByClassName("ui-dialog-buttonset")[0].getElementsByClassName("ui-button")[0].click();
-            wait(window.cagaste);
+          setTimeout(() => {
             history.back();
-            wait(window.cagaste);
+            setTimeout(() => {
             var owowo = (document.getElementsByClassName("ui-icon ui-icon-circle-triangle-e")[0]);
             owowo.click();
+            
+            }, window.cagaste);
+            }, window.cagaste);
+            }, window.cagaste);
+            
             };
 
         
