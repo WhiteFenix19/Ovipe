@@ -15,25 +15,18 @@ if (contenedor == false) {
   };});
 
         function breeding() {
-
-            setTimeout(() => {
             ewewewewewe = document.getElementsByClassName("pet").length - 1;
             awawawa = Math.floor((Math.random() * (ewewewewewe - 1 + 1)) + 1);
             var we = document.getElementsByClassName("pet")[awawawa];
             console.log(awawawa);
             we.click();
-            setTimeout(() => {
+            wait(window.cagaste);
             document.getElementsByClassName("ui-dialog-buttonset")[0].getElementsByClassName("ui-button")[0].click();
-          setTimeout(() => {
+            wait(window.cagaste);
             history.back();
-            setTimeout(() => {
+            wait(window.cagaste);
             var owowo = (document.getElementsByClassName("ui-icon ui-icon-circle-triangle-e")[0]);
             owowo.click();
-            
-            }, window.cagaste);
-            }, window.cagaste);
-            }, window.cagaste);
-            }, 200);
             };
 
         
