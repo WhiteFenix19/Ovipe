@@ -1,7 +1,6 @@
 window.cagaste = 700 // poner el delay que quieran en milisegundos
 
-window.hackeand = (cagaste * 3)
-window.hackeando = (hackeand + 150)
+window.hackeando = (cagaste * 3);
 window.contenedor = false;
 document.addEventListener("keypress", function(event) {
     if (event.keyCode == 49){
@@ -16,12 +15,13 @@ if (contenedor == false) {
   };});
 
         function breeding() {
+
+            setTimeout(() => {
             ewewewewewe = document.getElementsByClassName("pet").length - 1;
             awawawa = Math.floor((Math.random() * (ewewewewewe - 1 + 1)) + 1);
             var we = document.getElementsByClassName("pet")[awawawa];
             console.log(awawawa);
             we.click();
-            
             setTimeout(() => {
             document.getElementsByClassName("ui-dialog-buttonset")[0].getElementsByClassName("ui-button")[0].click();
           setTimeout(() => {
@@ -33,7 +33,7 @@ if (contenedor == false) {
             }, window.cagaste);
             }, window.cagaste);
             }, window.cagaste);
-            
+            }, 200);
             };
 
         
