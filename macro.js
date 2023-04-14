@@ -16,6 +16,7 @@ if (contenedor == false) {
 
 
   function breeding(){
+    try{
     ewewewewewe = document.getElementsByClassName("pet").length - 1;
     awawawa = Math.floor((Math.random() * (ewewewewewe - 1 + 1)) + 1);
     document.getElementsByClassName("pet")[awawawa].click();
@@ -23,6 +24,13 @@ if (contenedor == false) {
    seis = setTimeout(() => {
     accepting();
     }, window.delay);}
+    catch{
+        err = setTimeout(() => {
+            breeding();
+            }, 200);
+    }
+
+}
 
   function accepting()
   {
