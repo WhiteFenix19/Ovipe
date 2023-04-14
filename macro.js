@@ -1,5 +1,4 @@
 window.delay = 700; /// Poner que tanto delay quieren
-window.delayrepeat = delay + 200; 
 window.contenedor = false;
 document.addEventListener("keypress", function(event) {
     if (event.keyCode == 49){
