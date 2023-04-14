@@ -68,10 +68,11 @@ if (contenedor == false) {
   function cosas()
   {
       if (contenedor == true){
-    clearTimeout(err);
+
       clearTimeout(seis);
       clearTimeout(siete);
       clearTimeout(ocho);
       clearTimeout(nueve);
+      clearTimeout(err);
       $('body').css('background-color', '#ffffff');}
   }
