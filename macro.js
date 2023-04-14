@@ -22,6 +22,17 @@ if (contenedor == false) {
    seis = setTimeout(() => {
     accepting();
     }, window.delay);}
+    
+    function breeding2(){
+        window.onload =
+        ewewewewewe = document.getElementsByClassName("pet").length - 1;
+        awawawa = Math.floor((Math.random() * (ewewewewewe - 1 + 1)) + 1);
+        document.getElementsByClassName("pet")[awawawa].click();
+    
+       seis = setTimeout(() => {
+        accepting();
+        }, window.delay);}
+
 
   function accepting()
   {
@@ -42,7 +53,7 @@ if (contenedor == false) {
 
 function volviendoaempezar(){
     nueve = setTimeout(() => {
-        breeding();
+        breeding2();
         }, window.delay);}
 
 
