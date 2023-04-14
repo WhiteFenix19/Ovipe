@@ -1,7 +1,5 @@
 window.contenedor = false;
 window.delay = 700;
-window.contenedor = false;
-window.delay = 700;
 document.addEventListener("keypress", function(event) {
     if (event.keyCode == 49){
 if (contenedor == false) {
