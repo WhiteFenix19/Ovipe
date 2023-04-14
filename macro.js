@@ -38,6 +38,9 @@ if (contenedor == false) {
 
   function pasando(){
     document.getElementsByClassName("ui-icon ui-icon-circle-triangle-e")[0].click();
+    window.onload = volviendoaempezar()}
+
+function volviendoaempezar(){
     nueve = setTimeout(() => {
         breeding();
         }, window.delay);}
