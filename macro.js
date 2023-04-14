@@ -1,4 +1,5 @@
 window.delay = 700; /// Poner que tanto delay quieren
+window.delayrepeat = delay + 200; 
 window.contenedor = false;
 document.addEventListener("keypress", function(event) {
     if (event.keyCode == 49){
@@ -22,17 +23,6 @@ if (contenedor == false) {
    seis = setTimeout(() => {
     accepting();
     }, window.delay);}
-    
-    function breeding2(){
-        window.onload =
-        ewewewewewe = document.getElementsByClassName("pet").length - 1;
-        awawawa = Math.floor((Math.random() * (ewewewewewe - 1 + 1)) + 1);
-        document.getElementsByClassName("pet")[awawawa].click();
-    
-       seis = setTimeout(() => {
-        accepting();
-        }, window.delay);}
-
 
   function accepting()
   {
@@ -49,15 +39,9 @@ if (contenedor == false) {
 
   function pasando(){
     document.getElementsByClassName("ui-icon ui-icon-circle-triangle-e")[0].click();
-    window.onload = volviendoaempezar()}
-
-function volviendoaempezar(){
     nueve = setTimeout(() => {
-        breeding2();
-        }, window.delay);}
-
-
-
+        breeding();
+        }, window.delayrepeat);}
 
 
   function dos()
