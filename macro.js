@@ -26,10 +26,17 @@ if (contenedor == false) {
 
   function accepting()
   {
+    try{
     document.getElementsByClassName("ui-dialog-buttonset")[0].getElementsByClassName("ui-button")[0].click();  
     siete = setTimeout(() => {
         volviendo();
         }, window.delay);}
+    catch{
+        err = setTimeout(() => {
+            breeding();
+            }, 200);}
+    }
+    
 
   function volviendo(){
     history.back();
@@ -41,7 +48,7 @@ if (contenedor == false) {
     document.getElementsByClassName("ui-icon ui-icon-circle-triangle-e")[0].click();
     nueve = setTimeout(() => {
         breeding();
-        }, window.delayrepeat);}
+        }, window.delay);}
 
 
   function dos()
@@ -54,6 +61,7 @@ if (contenedor == false) {
   function cosas()
   {
       if (contenedor == true){
+    clearTimeout(err);
       clearTimeout(seis);
       clearTimeout(siete);
       clearTimeout(ocho);
