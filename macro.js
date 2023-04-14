@@ -1,6 +1,4 @@
-window.cagaste = 700 // poner el delay que quieran en milisegundos
-
-window.hackeando = cagaste * 3
+window.delay = 700; /// Poner que tanto delay quieren
 window.contenedor = false;
 document.addEventListener("keypress", function(event) {
     if (event.keyCode == 49){
@@ -14,38 +12,53 @@ if (contenedor == false) {
 
   };});
 
-        function breeding() {
-            ewewewewewe = document.getElementsByClassName("pet").length - 1;
-            awawawa = Math.floor((Math.random() * (ewewewewewe - 1 + 1)) + 1);
-            var we = document.getElementsByClassName("pet")[awawawa];
-            console.log(awawawa);
-            we.click();
-            
-            setTimeout(() => {
-            document.getElementsByClassName("ui-dialog-buttonset")[0].getElementsByClassName("ui-button")[0].click();
-          setTimeout(() => {
-            history.back();
-            setTimeout(() => {
-            var owowo = (document.getElementsByClassName("ui-icon ui-icon-circle-triangle-e")[0]);
-            owowo.click();
-            
-            }, window.cagaste);
-            }, window.cagaste);
-            }, window.cagaste);
-            
-            };
 
-        
-        function dos()
-        {
-            
-            breedingtimer = setInterval(breeding, window.hackeando);
-            $('body').css('background-color', '#125e20');
-            
-        }
-        function cosas()
-        {
-            if (contenedor == true){
-            clearInterval(breedingtimer);
-            $('body').css('background-color', '#ffffff');}
-        }
+
+  function breeding(){
+    ewewewewewe = document.getElementsByClassName("pet").length - 1;
+    awawawa = Math.floor((Math.random() * (ewewewewewe - 1 + 1)) + 1);
+    document.getElementsByClassName("pet")[awawawa].click();
+
+   seis = setTimeout(() => {
+    accepting();
+    }, window.delay);}
+
+  function accepting()
+  {
+    document.getElementsByClassName("ui-dialog-buttonset")[0].getElementsByClassName("ui-button")[0].click();  
+    siete = setTimeout(() => {
+        volviendo();
+        }, window.delay);}
+
+  function volviendo(){
+    history.back();
+    ocho = setTimeout(() => {
+        pasando();
+        }, window.delay);}
+
+  function pasando(){
+    document.getElementsByClassName("ui-icon ui-icon-circle-triangle-e")[0].click();
+    nueve = setTimeout(() => {
+        breeding();
+        }, window.delay);}
+
+
+
+
+
+  function dos()
+  {
+      
+        breeding();
+      $('body').css('background-color', '#125e20');
+      
+  }
+  function cosas()
+  {
+      if (contenedor == true){
+      clearTimeout(seis);
+      clearTimeout(siete);
+      clearTimeout(ocho);
+      clearTimeout(nueve);
+      $('body').css('background-color', '#ffffff');}
+  }
