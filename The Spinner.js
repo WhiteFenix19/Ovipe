@@ -1,23 +1,27 @@
-window.contenedor = false;
+window.iforgor = false;
 window.delay = 700;
 document.addEventListener("keypress", function(event) {
     if (event.keyCode == 49){
-if (contenedor == false) {
+if (iforgor == false) {
                 dos();
-                contenedor = true;   }}
+                iforgor = true;   }}
 
     if (event.keyCode == 51) {
         cosas();
-        contenedor = false;
+        iforgor = false;
 
   };});
 
 
 function girar(){
+    try {
     document.getElementsByClassName("ui-fieldset ui-widget-content ui-corner-all actions")[0].getElementsByClassName("ui-button ui-corner-all ui-widget")[0].click();
      diez = setTimeout(() => {  
        credito();
-    }, window.delay);
+    }, window.delay);}
+    catch (a) {
+        pasar();
+    }
  }
 
  function credito(){
@@ -46,11 +50,14 @@ function pasar(){
     }
     function cosas()
     {
-        if (contenedor == true){
-        
-        clearTimeout(diez);
-        clearTimeout(once);
-        $('body').css('background-color', '#ffffff');}
+      if (iforgor == true){
+        $('body').css('background-color', '#ffffff');
+      try{
+      clearTimeout(diez);
+      clearTimeout(once);
+      clearTimeout(doce);}
+          catch{return;}
+      }
     }
    
     
