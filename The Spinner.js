@@ -20,7 +20,9 @@ function girar(){
        credito();
     }, window.delay);}
     catch (a) {
+        err = setTimeout(() => {
         pasar();
+        }, 200);}
     }
  }
 
@@ -31,7 +33,9 @@ function girar(){
             pasar();
          }, window.delay);}
          catch (e) {
+          err = setTimeout(() => {
             pasar();
+               }, 200);}
           }}
 
 
@@ -55,7 +59,8 @@ function pasar(){
       try{
       clearTimeout(diez);
       clearTimeout(once);
-      clearTimeout(doce);}
+      clearTimeout(doce);
+      clearTimeout(err);}
           catch{return;}
       }
     }
