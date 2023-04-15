@@ -24,7 +24,7 @@ function girar(){
         pasar();
         }, 200);}
     }
- }
+ 
 
  function credito(){
     try {
@@ -36,7 +36,7 @@ function girar(){
           err = setTimeout(() => {
             pasar();
                }, 200);}
-          }}
+          }
 
 
 function pasar(){
@@ -64,5 +64,3 @@ function pasar(){
           catch{return;}
       }
     }
-   
-    
