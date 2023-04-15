@@ -70,11 +70,7 @@ if (contenedor == false) {
       if (contenedor == true){
         $('body').css('background-color', '#ffffff');
       try{
-      clearTimeout(seis);
-      clearTimeout(siete);
-      clearTimeout(ocho);
-      clearTimeout(nueve);
-      clearTimeout(err);}
+throw new Error('Parameter is not a number!')}
           catch{return;}
       }
   }
