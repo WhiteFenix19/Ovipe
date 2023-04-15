@@ -16,11 +16,11 @@ if (iforgor == false) {
 function girar(){
     try {
     document.getElementsByClassName("ui-fieldset ui-widget-content ui-corner-all actions")[0].getElementsByClassName("ui-button ui-corner-all ui-widget")[0].click();
-     diez = setTimeout(() => {  
+     iforger = setTimeout(() => {  
        credito();
     }, window.delay);}
     catch (a) {
-        err = setTimeout(() => {
+        iforger = setTimeout(() => {
         pasar();
         }, 200);}
     }
@@ -29,11 +29,11 @@ function girar(){
  function credito(){
     try {
     document.getElementsByClassName("ui-dialog-buttonpane ui-widget-content ui-helper-clearfix")[0].getElementsByClassName("ui-button ui-corner-all ui-widget")[0].click();
-        once = setTimeout(() => {  
+        iforger = setTimeout(() => {  
             pasar();
          }, window.delay);}
          catch (e) {
-          err = setTimeout(() => {
+          iforger = setTimeout(() => {
             pasar();
                }, 200);}
           }
@@ -41,7 +41,7 @@ function girar(){
 
 function pasar(){
  document.getElementsByClassName("ui-icon ui-icon-circle-triangle-e")[0].click()
- doce = setTimeout(() => {  
+ iforger = setTimeout(() => {  
     girar();
  }, window.delay);
 }
@@ -57,10 +57,7 @@ function pasar(){
       if (iforgor == true){
         $('body').css('background-color', '#ffffff');
       try{
-      clearTimeout(diez);
-      clearTimeout(once);
-      clearTimeout(doce);
-      clearTimeout(err);}
+      clearTimeout(iforger);}
           catch{return;}
       }
     }
